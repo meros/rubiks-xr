@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rubik's XR</title>
+    <link rel="icon" href="data:," />
+    <style>
+      html, body { margin: 0; height: 100%; background: #111; color: #eee; font: 16px system-ui, sans-serif; overflow: hidden; }
+      #intro { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; gap: 12px; padding: 16px; pointer-events: none; }
+      #intro h1 { margin: 0; font-size: 28px; }
+      #intro p { margin: 0; opacity: .75; max-width: 420px; }
+    </style>
+  </head>
+  <body>
+    <div id="intro">
+      <h1>Rubik's XR</h1>
+      <p>Hand-tracked cube for Meta Quest. Put the controllers down, then press Start AR.</p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

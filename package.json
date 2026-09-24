@@ -1,0 +1,24 @@
+{
+  "name": "rubiks-xr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.20.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@iwer/devui": "^2.5.0",
+    "@iwer/sem": "^2.5.0",
+    "@types/node": "^26.6.2",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "iwer": "^2.5.0",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1"
+  }
+}
