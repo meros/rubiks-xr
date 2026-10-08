@@ -3,6 +3,8 @@
 A hand-tracked Rubik's cube for Meta Quest in passthrough AR (WebXR, three.js, Rapier).
 The cube drops onto your table; you pick it up, throw it and turn its faces.
 
+Live at https://meros.github.io/rubiks-xr/ (open it in the Quest Browser).
+
 ## Play
 
 | Do this | What happens | What you see |
@@ -42,5 +44,14 @@ hands and a scanned room. `?emulate` forces it, `?room=living_room` picks anothe
 
 ## Model
 
-`public/cube.glb` is exported from `../rubiks_cube.blend` (26 cubie nodes, about 33k triangles).
+`public/cube.glb` is exported from `blender/rubiks_cube.blend` (26 cubie nodes, about 33k triangles).
 `src/cube.ts` holds the cube state: each cubie's grid position and orientation, the turn queue and the solved check.
+`blender/rubiks_cube_build.py` rebuilds that scene; it loads `rubiks_turns.py` from its own folder.
+
+## Status
+
+Personal project. Playable on a Quest; each push to `main` deploys to GitHub Pages.
+
+## License
+
+0BSD. See [LICENSE](LICENSE).

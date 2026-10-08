@@ -1,6 +1,7 @@
 {
   "name": "rubiks-xr",
   "private": true,
+  "license": "0BSD",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

@@ -1,8 +1,8 @@
 # Builds the Rubik's cube scene: materials, desk scene, bone rig, demo animation.
-import bpy, bmesh, math
+import bpy, bmesh, math, os
 from mathutils import Vector, Matrix
 
-HERE = "/home/meros/git/personal"
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 # ---- reset -----------------------------------------------------------------
 for coll in (bpy.data.objects, bpy.data.meshes, bpy.data.materials, bpy.data.lights,
